@@ -1,0 +1,20 @@
+﻿@model IEnumerable<PostModel>
+
+@{
+
+}
+
+<div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <a asp-controller="Post" asp-action="GetById" asp-route-id="@item.Id">@item.Title</a>
+                <a asp-controller="Post" asp-action="ModifyPost" asp-route-id="@item.Id">Edit</a>
+                <a asp-controller="Post" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </li>
+
+        }
+    </ul>
+    <a asp-controller="Post" asp-action="ModifyPost">Create Post</a>
+</div>

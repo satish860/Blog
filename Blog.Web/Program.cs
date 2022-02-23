@@ -55,6 +55,7 @@ if (!ctx.Users.Any(p => p.UserName == "admin"))
 
 app.UseRouting();
 app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
