@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <a asp-controller="home" asp-action="index">Home</a>
+        <a asp-controller="home" asp-action="Edit">Create new</a>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a asp-controller="auth" asp-action="Logout">LogOut</a>
+        }
+        else
+        {
+            <a asp-controller="auth" asp-action="Login">Login</a>
+        }
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
