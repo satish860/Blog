@@ -52,7 +52,7 @@ if (!ctx.Users.Any(p => p.UserName == "admin"))
     userManager.AddToRoleAsync(adminUser, adminRole.Name).GetAwaiter().GetResult();
 }
 
-
+app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
