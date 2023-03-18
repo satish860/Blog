@@ -5,6 +5,7 @@ seoDescription: "NATS is a messaging platform that can connect multiple technolo
 datePublished: Fri Mar 10 2023 12:05:36 GMT+0000 (Coordinated Universal Time)
 cuid: clf2hr7cu000008mlghbzetsb
 slug: running-nats-as-websocket-server
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/uLnmmE8Y0E4/upload/ac62eb65f4e64b1bdc3e3d5a27ee4c03.jpeg
 tags: message-queue
 
 ---
